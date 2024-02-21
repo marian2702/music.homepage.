@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Protest+Revolution&family=Rubik+Glitch+Pop&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+           <img src="logo.png" class="logo">
+           <ul>
+            <li><a href=""></a>HOME</li>
+            <li><a href=""></a>ABOUT</li>
+            <li><a href=""></a>SPECIFICATIONS</li>
+            <li><a href=""></a>PRODUCTS</li>
+            <li><a href=""></a>CONNECT</li>
+           </ul>
+        </div>
+        <div class="content">
+            <div class="left-col">
+                <h1>THE <br> REAL <br> SOUND</h1>
+            </div>
+            <div class="right-col">
+                <p>Click Here To Liststen</p>
+                <img src="play.png" id="icon">
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <h3>Social media  platfrom</h3>
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+    
+
+        <ul class="socials">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa fa-google"></i></a></li>
+            <li><a href=""><i class="fa fa-youtube"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+        
+        </ul>
+    </div>
+</footer>
+<div class="footer-bottom">
+    <p>&copy;2024 Marian Halibei. All rights reserved.</p>
+</div>
+    
+    <audio id="mySong">
+        <source src="Ederlezi.mp3" type="audio/mp3">
+        
+    </audio>
+    <script>
+        var mySong = document.getElementById("mySong");
+        var playBtn = document.getElementById("icon")
+
+        playBtn.onclick = function(){
+            if(mySong.paused){
+                mySong.play();
+                icon.src = "pause.png"
+            }else{
+                mySong.pause();
+                icon.src = "play.png"
+            }
+        }
+    </script>
+</body>
+</html>
